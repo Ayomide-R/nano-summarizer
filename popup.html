@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nano Summarizer ✨</title>
+  </head>
+  <body>
+    <h1>Nano Summarizer ✨</h1>
+
+    <!-- 📝 Text input area -->
+    <textarea id="inputText" placeholder="Paste or type text here..."></textarea>
+
+    <!-- 📂 File upload input -->
+    <div class="file-upload">
+      <label for="fileInput">Or upload a file:</label>
+      <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt" />
+    </div>
+
+    <!-- 🔘 Buttons -->
+    <div class="buttons">
+      <button id="summarizeOnline">Summarize (Online)</button>
+      <button id="summarizeOffline">Summarize (Offline)</button>
+      <button id="summarizeFile">Summarize File</button>
+    </div>
+
+    <!-- 💡 Output area -->
+    <h3>Summary:</h3>
+    <div id="output"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

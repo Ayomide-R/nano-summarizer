@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Nano Summarizer",
+  "version": "1.0",
+  "description": "Summarize text online (Gemini) or offline (local AI model)",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  },
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "https://cdn.jsdelivr.net/*",
+    "https://huggingface.co/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' https://cdn.jsdelivr.net; object-src 'self'"
+  }
+}
